@@ -1,0 +1,28 @@
+{
+  "name": "beeserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc --watch",
+    "start": "nodemon -e ts --exec ts-node src/main.ts",
+    "webpack": "webpack --config webpack.config.js --watch"
+  },
+  "author": "Min",
+  "license": "ISC",
+  "dependencies": {
+    "@types/md5": "^2.3.2",
+    "@types/node": "^18.14.1",
+    "dgram": "^1.0.1",
+    "md5": "^2.3.0",
+    "moment": "^2.29.4",
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.6.6",
+    "nodemon": "^2.0.20",
+    "pg": "^8.9.0",
+    "ts-node": "^10.9.1"
+  }
+}
