@@ -6,9 +6,9 @@ class PostgreSQLClient {
     constructor() {
         const config = {
             user: "postgres",
-            host: 'localhost',
+            host: '10.15.2.98',
             database: "atechat",
-            password: "studio",
+            password: "Blueway123456",
             port: 5432,
         
             // 扩展属性

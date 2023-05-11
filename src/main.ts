@@ -3,7 +3,8 @@ import moment from 'moment';
 import Doing from './Doing';
 
 // const HOST = '192.168.8.1';
-const HOST = '10.15.5.151';
+// const HOST = '10.15.5.151';
+const HOST = '10.15.46.125';
 const PORT = 65432;
 
 const DOING_KEY = {
@@ -31,7 +32,8 @@ server.on('message', (buffer, remoteInfo) => {
     
     var message;
     try {
-        message = JSON.parse(buffer.toString());
+        let msg = buffer.toString();
+        message = JSON.parse(msg);
     } catch (err) {
         console.error(`来自${remoteInfo.address}:${remoteInfo.port}的消息，消息解析错误！${err}`);
         return;
