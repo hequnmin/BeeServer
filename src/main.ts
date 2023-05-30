@@ -2,9 +2,9 @@ import dgram, { RemoteInfo } from 'dgram';
 import moment from 'moment';
 import Doing from './Doing';
 
-// const HOST = '192.168.8.1';
+const HOST = '192.168.1.114';
 // const HOST = '10.15.5.151';
-const HOST = '10.15.46.125';
+// const HOST = '10.15.46.125';
 const PORT = 65432;
 
 const DOING_KEY = {
