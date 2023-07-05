@@ -132,8 +132,11 @@ class Doing {
                             token: token,
                             user: {
                                 userid: res[0].userid,
+                                userno:body.userno,
                                 address: rinfo.address,
-                                port: rinfo.port
+                                port: rinfo.port,
+                                addressMSg: body.address,
+                                portMsg:body.port
                             }
                         },
                         error: error
@@ -149,8 +152,11 @@ class Doing {
                         token: token,
                         user: {
                             userid: result.rows[0].userid,
+                            userno:body.userno,
                             address: rinfo.address,
-                            port: rinfo.port
+                            port: rinfo.port,
+                            addressMSg: body.address,
+                            portMsg:body.port
                         }
                     },
                     error: error
