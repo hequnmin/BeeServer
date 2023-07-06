@@ -115,6 +115,8 @@ class Doing {
             port: rinfo.port,
             mac: body.mac,
             lastlogin: moment().format('YYYY-MM-DD HH:mm:ss'),
+            addressLocal: body.address,
+            portLocal:body.port,
         };
 
         const stamp = moment.now().toString();
@@ -135,8 +137,6 @@ class Doing {
                                 userno:body.userno,
                                 address: rinfo.address,
                                 port: rinfo.port,
-                                addressMSg: body.address,
-                                portMsg:body.port
                             }
                         },
                         error: error
@@ -155,8 +155,6 @@ class Doing {
                             userno:body.userno,
                             address: rinfo.address,
                             port: rinfo.port,
-                            addressMSg: body.address,
-                            portMsg:body.port
                         }
                     },
                     error: error
